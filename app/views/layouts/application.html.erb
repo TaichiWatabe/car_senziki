@@ -9,23 +9,37 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <div class = "header">
     <nav class = "navbar-fixed-top">
       <div class = "carnavi">
-        
+        <%= link_to image_tag("myicon.png", :id => "icon"), root_path %>
       </div>
       <div class="cp_cont">
       	<div class="cp_offcm01">
-      		<input type="checkbox" id="cp_toggle01">
-      		<label for="cp_toggle01"><span></span></label>
-      		<div class="cp_menu">
-      		<ul>
-      		<li><%= link_to "トップページ", root_path %></li>
-      		</ul>
-      		</div>
-      	</div>
+       		<input type="checkbox" id="cp_toggle01">
+       		<label for="cp_toggle01"><span></span></label>
+          <div class="cp_menu">
+            <ul>
+           		<li><%= link_to "トップページ", root_path %></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </nav>
-    <%= yield %>
+     </nav>
+  </div>
+  <body>
+    <container>
+      <div class = "container">
+        <div class = "row">
+          <%= yield %>
+        </div>
+      </div>
+    </container>
+    
+    <div class = "wrapper">
+      <footer>
+        <small>&copy; 2020 CarSenziki Taichi Watabe .</small>
+      </footer>
+    </div><!--/.wrapper-->
   </body>
 </html>
