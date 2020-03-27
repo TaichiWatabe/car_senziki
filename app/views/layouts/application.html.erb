@@ -4,7 +4,7 @@
     <title>CarSenziki</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/068ffe27ac.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -21,6 +21,7 @@
           <div class="cp_menu">
             <ul>
            		<li><%= link_to "トップページ", root_path %></li>
+           		<li><%= link_to "サインアップ", signup_path %></li>
             </ul>
           </div>
         </div>
