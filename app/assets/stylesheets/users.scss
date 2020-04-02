@@ -1,3 +1,113 @@
-// Place all the styles related to the Users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* マイページ */
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+.h1title {
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+  margin-top: 70px;
+	position: relative;
+	display: inline-block;
+	padding: 0 17%;
+	text-align: center;
+	color:#F4511E;
+}
+.h1title:before, .h1title:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 15%;
+	height: 1px;
+	background-color: #F4511E;
+}
+.h1title:before {
+	left:0;
+	background: linear-gradient(-45deg, transparent, #F4511E 10%, #F4511E 30%, transparent);
+}
+.h1title:after {
+	right: 0;
+	background: linear-gradient(-45deg, transparent, #F4511E 70%, #F4511E 90%, transparent);
+}
+
+/* sidebar */
+
+.profile1 {
+  margin: -100px;
+}
+
+aside {
+  section.user_info {
+    margin: 20px 0;
+  }
+  section {
+    padding: 10px 10px;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 2.2em;
+      text-align: left;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+.cp_h1title{
+	position: relative;
+	overflow: hidden;
+	padding: -20px;
+}
+.cp_h1title::before,
+.cp_h1title::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+}
+.cp_h1title:before{
+	border-bottom: 4px solid #F4511E;
+	width: 100%;
+}
+.cp_h1title:after{
+	border-bottom: 4px solid #FFAB91;
+	width: 100%;
+}
+
+/* 新規登録ページ */
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+.form1 {
+  padding-top: 70px;
+}
