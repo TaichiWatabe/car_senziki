@@ -6,13 +6,13 @@
 }
 
 .h1title {
-    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
-    margin-top: 70px;
-	position: relative;
-	display: inline-block;
-	padding: 0 17%;
-	text-align: center;
-	color:#F4511E;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+  margin-top: 70px;
+  position: relative;
+  display: inline-block;
+  padding: 0 17%;
+  text-align: center;
+  color:#F4511E;
 }
 .h1title:before, .h1title:after {
 	content: '';
@@ -35,7 +35,6 @@
 /* sidebar */
 
 .profile1 {
-  background-color: #fff;
   margin: -80px;
 }
 
