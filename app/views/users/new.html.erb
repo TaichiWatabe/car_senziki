@@ -1,1 +1,31 @@
-<h1>111</h1>
+<h3 class = "h1title sinki">新規登録</h3>
+
+<div class="row">
+     <div class="col-md-6">
+         <%= form_for(@user) do |f| %>
+            <%= render 'shared/error_messages' %>
+      
+            <div class="form-group">
+                <%= f.label :ユーザーネーム, class: 'form-label' %>
+                <%= f.text_field :name, class: 'form-control input-lg', placeholder: "例:Neville" %>
+            </div>
+            
+            <div class="form-group">
+                <%= f.label :メールアドレス, class: 'form-label' %>
+                <%= f.email_field :email, class: 'form-control input-lg', placeholder: "例:sample@example.com" %>
+            </div>
+            
+            <div class="form-group">
+                <%= f.label :パスワード, class: 'form-label' %>
+                <%= f.password_field :password, class: 'form-control input-lg', placeholder: "例:carsenziki" %>
+            </div>
+
+            <div class="form-group">
+                <%= f.label :password_confirmation, "パスワード（確認）", class: 'form-label' %>
+                <%= f.password_field :password_confirmation, class: 'form-control input-lg', placeholder: "例:carsenziki" %>
+            </div>
+
+            <%= f.submit "Create my account", class: "cp_btn" %>
+    <% end %>
+  </div>
+</div>

@@ -21,7 +21,7 @@
           <div class="cp_menu">
             <ul>
            		<li><%= link_to "トップページ", root_path %></li>
-           		<li><%= link_to "サインアップ", signup_path %></li>
+           		<li><%= link_to "新規登録", signup_path %></li>
             </ul>
           </div>
         </div>
@@ -31,9 +31,10 @@
   <body>
     <container>
       <div class = "container">
-        <div class = "row">
+      <% flash.each do |message_type, message| %>
+        <h3 class=" flashes-<%= message_type %>"><%= message %></h3>
+      <% end %>
           <%= yield %>
-        </div>
       </div>
     </container>
     

@@ -6,8 +6,8 @@
 }
 
 .h1title {
-  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
-  margin-top: 70px;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+    margin-top: 70px;
 	position: relative;
 	display: inline-block;
 	padding: 0 17%;
@@ -35,7 +35,7 @@
 /* sidebar */
 
 .profile1 {
-  margin: -100px;
+  margin: -80px;
 }
 
 aside {
@@ -98,16 +98,38 @@ aside {
 /* forms */
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  margin-bottom: 15px;
-  @include box_sizing;
+    border: 1px solid #bbb;
+    width: 100%;
+    margin-bottom: 15px;
+    @include box_sizing;
 }
 
 input {
-  height: auto !important;
+    height: auto !important;
 }
 
-.form1 {
-  padding-top: 70px;
+.sinki {
+    margin: 10px 0 30px 0;
+}
+
+.form-label {
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+    color: red;
+}
+
+.cp_btn {
+    margin-top: 30px;
+	display: block;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #FA5858;
+	border: 2px solid #FA5858;
+	border-radius: 3px;
+	transition: .4s;
+}
+.cp_btn:hover {
+	background: #FA5858;
+	color: #fff;
 }
