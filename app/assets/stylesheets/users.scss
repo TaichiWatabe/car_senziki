@@ -6,13 +6,8 @@
 }
 
 .h1title {
-<<<<<<< HEAD
-  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
-  margin-top: 70px;
-=======
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
     margin-top: 70px;
->>>>>>> sign-up2
 	position: relative;
 	display: inline-block;
 	padding: 0 17%;
@@ -40,11 +35,8 @@
 /* sidebar */
 
 .profile1 {
-<<<<<<< HEAD
   background-color: #fff;
-=======
   margin: -80px;
->>>>>>> sign-up2
 }
 
 aside {
@@ -107,7 +99,6 @@ aside {
 /* forms */
 
 input, textarea, select, .uneditable-input {
-<<<<<<< HEAD
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
@@ -120,15 +111,10 @@ input {
 
 .form1 {
   padding-top: 70px;
-=======
     border: 1px solid #bbb;
     width: 100%;
     margin-bottom: 15px;
     @include box_sizing;
-}
-
-input {
-    height: auto !important;
 }
 
 .sinki {
@@ -155,5 +141,4 @@ input {
 .cp_btn:hover {
 	background: #FA5858;
 	color: #fff;
->>>>>>> sign-up2
 }
