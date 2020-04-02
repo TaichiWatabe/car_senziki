@@ -29,13 +29,13 @@
      </nav>
   </div>
   <body>
-    <container>
-      <div class = "container">
-        <div class = "row">
-          <%= yield %>
-        </div>
-      </div>
-    </container>
+
+    <div class="container">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <%= yield %>
+    </div>
     
     <div class = "wrapper">
       <footer>
