@@ -1,9 +1,16 @@
 <% if @user.errors.any? %>
   <div id="error_explanation">
+<<<<<<< HEAD
     <div class="alert alert-danger">
       The form contains <%= pluralize(@user.errors.count, "error") %>.
     </div>
     <ul>
+=======
+    <div class="flashes-danger">
+      The form contains <%= pluralize(@user.errors.count, "error") %>.
+    </div>
+    <ul class = "cp_clist">
+>>>>>>> sign-up2
     <% @user.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>

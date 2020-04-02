@@ -43,9 +43,7 @@ ol, ul {
 a {
 	text-decoration: none;
 }
-.cp_cont {
-	height: 65vh;
-}
+
 .cp_offcm01 {
 	position: absolute;
 	top: 3px;
@@ -124,9 +122,9 @@ a {
 
 .wrapper {
     min-height: 100vh;
-    position: relative;/*←相対位置*/
-    padding-bottom: 120px;/*←footerの高さ*/
-    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+    position: relative;
+    padding-bottom: 120px;
+    box-sizing: border-box;
 }
 
 footer {
@@ -144,4 +142,115 @@ footer {
 
 body {
 	background-color: #FAFAFA;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+/* flash の分岐 */
+
+.flashes-success {
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+	position: relative;
+	color: red;
+	text-align: center;
+	padding: 0.3em 0.3em 0.3em 0.8em;
+	background: #fffff2;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.flashes-success::before,
+.flashes-success::after {
+	position: absolute;
+	width: 0;
+	height: 51.95px;
+	content: '';
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #e60012;
+}
+.flashes-success::before {
+	top: -15px;
+	right: 10px;
+}
+.flashes-success::after {
+	bottom: -15px;
+	left: 10px;
+}
+
+.flashes-danger {
+	font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+	position: relative;
+	color: red;
+	text-align: center;
+	padding: 0.3em 0.3em 0.3em 0.8em;
+	background: #fffff2;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+.flashes-danger::before,
+.flashes-danger::after {
+	position: absolute;
+	width: 0;
+	height: 51.95px;
+	content: '';
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: #FAAC58;
+}
+.flashes-danger::before {
+	top: -15px;
+	right: 10px;
+}
+.flashes-danger::after {
+	bottom: -15px;
+	left: 10px;
+}
+
+
+ul.cp_clist {
+	counter-reset:cp_clist; /*数字をリセット*/
+	list-style-type: none;
+	padding:0.5em;
+}
+ul.cp_clist li {
+	position: relative;
+	padding-left: 30px;
+	padding: 0.5em 0.5em 0.5em 30px;
+}
+ul.cp_clist li::before {
+	position: absolute;
+	display:inline-block;
+	top: 50%;
+	left: 0;
+	/* カウントさせる */
+	counter-increment: cp_clist;
+	content: counter(cp_clist);
+	/*装飾*/
+	padding: 0 0.2em 0 0.2em;
+	background: #F4511E;
+	color: #fff;
+	font-weight:bold;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align:center;
+	transform: translateY(-50%);
 }

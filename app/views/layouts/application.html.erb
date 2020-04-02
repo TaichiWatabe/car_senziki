@@ -10,7 +10,7 @@
   </head>
 
   <div class = "header">
-    <nav class = "navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-static-top">
       <div class = "carnavi">
         <%= link_to image_tag("myicon.png", :id => "icon"), root_path %>
       </div>
@@ -21,7 +21,7 @@
           <div class="cp_menu">
             <ul>
            		<li><%= link_to "トップページ", root_path %></li>
-           		<li><%= link_to "サインアップ", signup_path %></li>
+           		<li><%= link_to "新規登録", signup_path %></li>
             </ul>
           </div>
         </div>
@@ -29,6 +29,7 @@
      </nav>
   </div>
   <body>
+<<<<<<< HEAD
 
     <div class="container">
       <% flash.each do |message_type, message| %>
@@ -36,6 +37,16 @@
       <% end %>
       <%= yield %>
     </div>
+=======
+    <container>
+      <div class = "container">
+      <% flash.each do |message_type, message| %>
+        <h3 class=" flashes-<%= message_type %>"><%= message %></h3>
+      <% end %>
+          <%= yield %>
+      </div>
+    </container>
+>>>>>>> sign-up2
     
     <div class = "wrapper">
       <footer>
