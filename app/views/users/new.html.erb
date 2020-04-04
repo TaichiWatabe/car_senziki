@@ -7,22 +7,25 @@
       
             <div class="form-group">
                 <%= f.label :ユーザーネーム, class: 'form-label' %>
-                <%= f.text_field :name, class: 'form-control input-lg', placeholder: "例：カセンジキくん" %>
+                <%= f.text_field :name, class: 'form-control input-lg' %>
+                <p>例：カセンジキくん</p>
             </div>
             
             <div class="form-group">
                 <%= f.label :メールアドレス, class: 'form-label' %>
-                <%= f.email_field :email, class: 'form-control input-lg', placeholder: "例：sample@example.com" %>
+                <%= f.email_field :email, class: 'form-control input-lg' %>
+                <p>例：sample@example.jp</p>
             </div>
             
             <div class="form-group">
                 <%= f.label :パスワード, class: 'form-label' %>
-                <%= f.password_field :password, class: 'form-control input-lg', placeholder: "例：半角英数６文字以上" %>
+                <%= f.password_field :password, class: 'form-control input-lg' %>
+                <p>※ 半角英数６文字以上</p>
             </div>
 
             <div class="form-group">
                 <%= f.label :password_confirmation, "パスワード（確認）", class: 'form-label' %>
-                <%= f.password_field :password_confirmation, class: 'form-control input-lg', placeholder: "例：半角英数６文字以上" %>
+                <%= f.password_field :password_confirmation, class: 'form-control input-lg' %>
                 <p>※ ご確認のため、もう一度ご入力ください。</p>
             </div>
 
