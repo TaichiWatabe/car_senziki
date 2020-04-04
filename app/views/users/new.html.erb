@@ -1,31 +1,32 @@
 <h3 class = "h1title sinki">新規登録</h3>
 
 <div class="row">
-     <div class="col-md-6">
+     <div class="forms">
          <%= form_for(@user) do |f| %>
             <%= render 'shared/error_messages' %>
       
             <div class="form-group">
                 <%= f.label :ユーザーネーム, class: 'form-label' %>
-                <%= f.text_field :name, class: 'form-control input-lg', placeholder: "例:Neville" %>
+                <%= f.text_field :name, class: 'form-control input-lg', placeholder: "例：カセンジキくん" %>
             </div>
             
             <div class="form-group">
                 <%= f.label :メールアドレス, class: 'form-label' %>
-                <%= f.email_field :email, class: 'form-control input-lg', placeholder: "例:sample@example.com" %>
+                <%= f.email_field :email, class: 'form-control input-lg', placeholder: "例：sample@example.com" %>
             </div>
             
             <div class="form-group">
                 <%= f.label :パスワード, class: 'form-label' %>
-                <%= f.password_field :password, class: 'form-control input-lg', placeholder: "例:carsenziki" %>
+                <%= f.password_field :password, class: 'form-control input-lg', placeholder: "例：半角英数６文字以上" %>
             </div>
 
             <div class="form-group">
                 <%= f.label :password_confirmation, "パスワード（確認）", class: 'form-label' %>
-                <%= f.password_field :password_confirmation, class: 'form-control input-lg', placeholder: "例:carsenziki" %>
+                <%= f.password_field :password_confirmation, class: 'form-control input-lg', placeholder: "例：半角英数６文字以上" %>
+                <p>※ ご確認のため、もう一度ご入力ください。</p>
             </div>
 
-            <%= f.submit "Create my account", class: "cp_btn" %>
+            <%= f.submit "新規作成", class: "cp_btn" %>
     <% end %>
   </div>
 </div>
