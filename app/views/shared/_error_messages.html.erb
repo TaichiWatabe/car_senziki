@@ -1,7 +1,7 @@
 <% if @user.errors.any? %>
   <div id="error_explanation">
     <div class="flashes-danger">
-      The form contains <%= pluralize(@user.errors.count, "error") %>.
+       <h5>ご入力頂いた情報に<%= @user.errors.count %>点誤りがございます</h5>
     </div>
     <ul class = "cp_clist">
     <% @user.errors.full_messages.each do |msg| %>
