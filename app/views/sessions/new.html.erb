@@ -1,0 +1,28 @@
+<h3 class = "h1title sinki">ログイン</h3>
+
+<div class="row">
+    <div class="forms">
+        <%= form_for(:session, url: login_path) do |f| %>
+
+            <div class="form-group">
+                <%= f.label :メールアドレス, class: 'form-label' %>
+                <%= f.email_field :email, class: 'form-control input-lg' %>
+                <p>※ ご登録頂いたメールアドレス</p>
+            </div>
+    
+            <div class="form-group">
+                <%= f.label :パスワード, class: 'form-label' %>
+                <%= f.password_field :password, class: 'form-control input-lg' %>
+                <p>※ ご登録頂いたパスワード</p>
+            </div>
+            
+            <div class="form-group">
+                <%= f.submit "ログイン", class: "cp_btn" %>
+            </div>
+        
+        <% end %>
+        <p class = "tourokusuru"><%= link_to "新規登録はこちら", signup_path, class: 'madanokata' %></p>
+    </div>
+
+
+</div>

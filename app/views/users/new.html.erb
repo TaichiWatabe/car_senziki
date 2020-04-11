@@ -1,8 +1,8 @@
 <h3 class = "h1title sinki">新規登録</h3>
 
 <div class="row">
-     <div class="forms">
-         <%= form_for(@user) do |f| %>
+    <div class="forms">
+        <%= form_for(@user) do |f| %>
             <%= render 'shared/error_messages' %>
       
             <div class="form-group">
@@ -30,6 +30,6 @@
             </div>
 
             <%= f.submit "新規作成", class: "cp_btn" %>
-    <% end %>
-  </div>
+        <% end %>
+    </div>
 </div>
