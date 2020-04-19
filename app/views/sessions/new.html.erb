@@ -16,6 +16,13 @@
                 <p>※ ご登録頂いたパスワード</p>
             </div>
             
+            <div class="form-group checkchan">
+                <%= f.label :remember_me, class: "checkbox-inline" do %>
+                    <%= f.check_box :remember_me, class: "option-input05" %>
+                    <span>ログイン情報を保持する</span>
+                <% end %>
+            </div>
+            
             <div class="form-group">
                 <%= f.submit "ログイン", class: "cp_btn" %>
             </div>
