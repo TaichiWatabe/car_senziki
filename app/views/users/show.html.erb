@@ -1,11 +1,14 @@
+<h3 class="h1title sinki"> マイページ </h3>
+
 <div class="row profile1">
   <aside class="col-md-4">
+    <h4 class="pro">プロフィール</h4>
     <section class="user_info">
-      <h3 class="h1title"> マイページ </h3>
       <h1 class = "cp_h1title">
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+      <%= link_to "プロフィールを編集する", edit_user_path(current_user), class: 'icons update-page' %>
     </section>
   </aside>
 </div>

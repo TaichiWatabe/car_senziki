@@ -5,6 +5,12 @@
   box-sizing:         border-box;
 }
 
+.user_info {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+}
+
 .h1title {
   font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
   margin-top: 80px;
@@ -32,10 +38,15 @@
 	background: linear-gradient(-45deg, transparent, #F4511E 70%, #F4511E 90%, transparent);
 }
 
+.update-page {
+  width: 100%;
+  text-align: center;
+}
+
 /* sidebar */
 
 .profile1 {
-  margin: -80px;
+  margin-top: -30px;
 }
 
 aside {
@@ -77,6 +88,7 @@ aside {
 	position: relative;
 	overflow: hidden;
 	padding: -20px;
+	margin-bottom: 10px;
 }
 .cp_h1title::before,
 .cp_h1title::after{
@@ -91,6 +103,17 @@ aside {
 .cp_h1title:after{
 	border-bottom: 4px solid #FFAB91;
 	width: 100%;
+}
+
+.pro {
+  color: red;
+  background-color: #fff;
+  border-radius: 50px;
+  width: 50%;
+  text-align: center;
+  margin: 50px auto -40px 0;
+  padding: 10px;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
 }
 
 /* 新規登録ページ */
@@ -147,9 +170,52 @@ input {
   padding: 30px 50px;
   width: 90%;
   margin: 30px auto 120px auto;
+  border-radius: 8px;
 }
 
 .form-group p {
   padding-top: 10px;
+  color: #848484;
+}
+
+/* プロフィール編集ページ　*/
+
+.gicon {
+  padding-bottom: 25px;
+}
+
+.giconp {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons {
+	display: inline-block;
+	padding: .6em 1em .6em 1em;
+	margin: 8px 0 .4em;
+	background-color: #FE9A2E;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+	border-radius: 50px;
+}
+.icons::after {
+	position: absolute;
+	font-weight: 400;
+	top: 50%;
+	left: .5em;
+  	transform: translateY(-50%);
+	font-size: 1.2em;
+}
+
+.icons:hover {
+	color: #fff;
+	background-color: #F7BE81;
+	text-decoration: none;
+}
+
+.ninni {
   color: #848484;
 }
