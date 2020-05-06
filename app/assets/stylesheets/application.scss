@@ -17,6 +17,31 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* トップに戻るボタン */
+
+.topIcon {
+  display       : inline-block;
+  position      : fixed;       /* ボタン固定 */
+  bottom        : 20px;        /* 下から位置 */
+  right         : 20px;        /* 右から位置 */
+  padding       : 10px 10px;   /* 余白       */
+  background    : #ff4d4d;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  opacity       : 0.5;         /* 透明度     */
+  border-radius : 5%;        /* 角丸       */
+  font-size     : 20pt;        /* 文字サイズ */
+  font-weight   : bold;        /* 太字       */
+  line-height   : 1.2em;       /* 行の高さ   */
+  letter-spacing: 2px;         /* 文字間隔   */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  z-index       : 999;         /* 重ね順位   */
+}
+
+.topIcon:hover {
+  opacity       : 0.9;   /* カーソル時透明度 */
+}
+
 
 // ヘッダー
 
