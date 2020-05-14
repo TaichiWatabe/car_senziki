@@ -4,5 +4,5 @@
 
 <p>ようこそカーセンジキへ!　下記確認用リンクから本人確認を完了させてください。</p>
 
-<%= link_to "確認用URL", edit_account_activation_url(@user.activation_token,
+<%= link_to "[確認用URL] こちらから本人確認を完了させてください。", edit_account_activation_url(@user.activation_token,
                                                     email: @user.email) %>

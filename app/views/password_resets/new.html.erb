@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="forms">
+        <div class="form-group">
+            
+            <%= form_for(:password_reset, url: password_resets_path) do |f| %>
+                <%= f.label :メールアドレス, class: 'form-label' %>
+                <%= f.email_field :email, class: 'form-control input-lg' %>
+                <p>※ ご登録頂いたメールアドレス</p>
+                <%= f.submit "送信", class: "cp_btn" %>
+            <% end %>
+            
+        </div>
+    </div>
+</div>

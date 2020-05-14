@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
         params[:session][:remember_me] == '1' ? remember(user) : forget(user)
         redirect_back_or user
       else
-        message  = "このアカウントはまだ有効ではありません"
+        message  = "このアカウントはまだ有効ではありません。"
         message += "確認用URLが記載されたメールをご確認ください"
         flash[:warning] = message
         redirect_to root_url
